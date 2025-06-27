@@ -24,6 +24,14 @@
   padding-top: 15px;
   padding-bottom: 14px;
   text-align: center;
+  border: 1px solid var(--bg-button);
+  transition: background-color 500ms var(--main-transition),
+    color 500ms var(--main-transition);
+}
+
+.button:hover {
+  background-color: var(--bg-card);
+  color: var(--main-text);
 }
 
 .buttonWrapper {

@@ -10,6 +10,7 @@
   --bg-button: var(--main-text);
   --bg-card: #fafafa;
   --main-font: 'Roboto', sans-serif;
+  --main-transition: ease;
 }
 
 @font-face {
