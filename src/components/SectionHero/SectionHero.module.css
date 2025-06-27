@@ -1,0 +1,66 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 44px;
+}
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.descr,
+.firstText,
+.secondText {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.heroImg {
+  margin-bottom: 15px;
+}
+
+.firstText {
+  margin-bottom: 15px;
+}
+
+.secondText {
+  margin-bottom: 33px;
+}
+
+.listResult {
+  counter-reset: item;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.listResult li::before {
+  counter-increment: item;
+  content: counter(item) ' - ';
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.resultTitle {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .heroImg {
+    margin-bottom: 25px;
+  }
+  .firstText {
+    margin-bottom: 25px;
+  }
+
+  .secondText {
+    margin-bottom: 30px;
+  }
+}

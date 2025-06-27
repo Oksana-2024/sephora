@@ -1,0 +1,38 @@
+.inputWrapper {
+  position: relative;
+  width: 161px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  stroke-width: 1.9px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 10px 8px 36px;
+  border-radius: 45px;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid var(--border);
+}
+
+.searchInput::placeholder {
+  color: var(--placeholder);
+}
+
+.searchForm {
+  margin-right: 16px;
+}
+
+@media screen and (min-width:1440px) {
+  .searchForm {
+    margin-right: 20px;
+  }
+  
+  .inputWrapper {
+    width: 260px;
+  }
+}

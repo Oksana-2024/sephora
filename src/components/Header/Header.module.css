@@ -1,0 +1,68 @@
+.headerbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 13px;
+}
+
+.imgWrapper {
+  margin-right: 10px;
+}
+
+.heartBtn {
+  margin-right: 15px;
+}
+
+.basketBtn,
+.heartBtn {
+  background-color: transparent;
+  width: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  box-shadow: 0 2px 30px 4px var(--shadow-header);
+}
+
+@media screen and (min-width: 1440px) {
+  .heartBtn {
+    margin-right: 26px;
+  }
+
+  .header {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    margin-right: 103px;
+    align-items: center;
+  }
+
+  .navLink {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    color: var(--secondary-text);
+  }
+
+  .headerbox {
+    padding-left: 153px;
+  }
+  .navTitle {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .descrNav {
+    font-weight: 300;
+    font-size: 10px;
+  }
+}
