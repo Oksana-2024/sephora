@@ -2,9 +2,13 @@
 :root {
   --main-text: #3d3f43;
   --secondary-text: #000;
+  --button-text: #fff;
   --placeholder: #7a7b7e;
-  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-header: rgba(0, 0, 0, 0.1);
+  --shadow-quiz: rgba(0, 0, 0, 0.15);
   --border: var(--main-text);
+  --bg-button: var(--main-text);
+  --bg-card: #fafafa;
   --main-font: 'Roboto', sans-serif;
 }
 
@@ -39,6 +43,7 @@
 
 body {
   font-family: var(--main-font);
+  color: var(--main-text);
 }
 
 h1,
