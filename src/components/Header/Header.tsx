@@ -12,17 +12,17 @@ export default function Header() {
         <div className={s.imgWrapper}>
           {isBigScreen ? (
             <img
-              src="/logo_d.png"
+              src="/logo_d.webp"
               alt="Logo"
-              srcSet="/logo_d@2x.png"
+              srcSet="/logo_d@2x.webp"
               width={194}
               height={55}
             />
           ) : (
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Logo"
-              srcSet="/logo@2x.png"
+              srcSet="/logo@2x.webp"
               width={110}
               height={31}
             />
