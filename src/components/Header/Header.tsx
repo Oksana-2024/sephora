@@ -12,17 +12,17 @@ export default function Header() {
         <div className={s.imgWrapper}>
           {isBigScreen ? (
             <img
-              src="/public/logo_d.png"
+              src="/logo_d.png"
               alt="Logo"
-              srcSet="/public/logo_d@2x.png"
+              srcSet="/logo_d@2x.png"
               width={194}
               height={55}
             />
           ) : (
             <img
-              src="/public/logo.png"
+              src="/logo.png"
               alt="Logo"
-              srcSet="/public/logo@2x.png"
+              srcSet="/logo@2x.png"
               width={110}
               height={31}
             />
@@ -32,18 +32,18 @@ export default function Header() {
         {isBigScreen && (
           <nav className={s.navList}>
             <NavLink className={s.navLink} to="/">
-              <img src="/public/build.svg" alt="Build icon" width={24} />
+              <img src="/build.svg" alt="Build icon" width={24} />
               <div className={s.wrapper}>
                 <h3 className={s.navTitle}>Shops and Services</h3>
                 <p className={s.descrNav}>Choose your store.</p>
               </div>
             </NavLink>
             <NavLink className={s.navLink} to="/">
-              <img src="/public/community.svg" alt="Peeple icon" width={24} />
+              <img src="/community.svg" alt="Peeple icon" width={24} />
               <h3 className={s.navTitle}> Community</h3>
             </NavLink>
             <NavLink className={s.navLink} to="/">
-              <img src="/public/login.svg" alt="Girl icon" width={24} />
+              <img src="/login.svg" alt="Girl icon" width={24} />
               <div className={s.wrapper}>
                 <h3 className={s.navTitle}>Log in </h3>
                 <p className={s.descrNav}>for FREE delivery 🚚</p>
@@ -53,14 +53,14 @@ export default function Header() {
         )}
         <button className={s.heartBtn}>
           <img
-            src="/public/heart.svg"
+            src="/heart.svg"
             alt="Heart icon"
             width={24}
             className={s.heartIcon}
           />
         </button>
         <button className={s.basketBtn}>
-          <img src="/public/basket.svg" alt="Basket" width={24} height={22} />
+          <img src="/basket.svg" alt="Basket" width={24} height={22} />
         </button>
       </Container>
     </header>

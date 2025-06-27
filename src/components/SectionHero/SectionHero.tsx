@@ -34,18 +34,18 @@ export default function SectionHero() {
             </p>
             {isBigScreen ? (
               <img
-                src="/public/promoImage_d.png"
+                src="/promoImage_d.png"
                 alt="Promo Sephora"
-                srcSet="/public/promoImage_d@2x.png"
+                srcSet="/promoImage_d@2x.png"
                 width={1440}
                 height={412}
                 className={s.heroImg}
               />
             ) : (
               <img
-                src="/public/promoImage.png"
+                src="/promoImage.png"
                 alt="Promo Sephora"
-                srcSet="/public/promoImage@2x.png"
+                srcSet="/promoImage@2x.png"
                 width={393}
                 height={113}
                 className={s.heroImg}

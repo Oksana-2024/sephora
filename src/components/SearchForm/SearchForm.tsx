@@ -23,7 +23,7 @@ export default function SearchForm() {
           placeholder="Search"
         />
         <img
-          src="/public/search.svg"
+          src="/search.svg"
           alt="Search icon"
           width={15}
           className={s.searchIcon}
