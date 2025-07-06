@@ -8,6 +8,7 @@
   top: 10px;
   left: 10px;
   stroke-width: 1.9px;
+  stroke: #000;
 }
 
 .searchInput {
@@ -27,11 +28,11 @@
   margin-right: 16px;
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .searchForm {
     margin-right: 20px;
   }
-  
+
   .inputWrapper {
     width: 260px;
   }

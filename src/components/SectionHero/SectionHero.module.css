@@ -2,6 +2,33 @@
   padding-top: 50px;
   padding-bottom: 44px;
 }
+
+.imageBox {
+  background-image: url('/public/promoImage.webp');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-clip: border-box;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.imageBoxWrapper {
+  position: relative;
+  height: 113px;
+  width: 393px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx) {
+  .imageBox {
+    background-image: url('/public/promoImage@2x.webp');
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 32px;
@@ -13,10 +40,6 @@
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 25px;
-}
-
-.heroImg {
-  margin-bottom: 15px;
 }
 
 .firstText {
@@ -53,14 +76,30 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .heroImg {
-    margin-bottom: 25px;
-  }
   .firstText {
     margin-bottom: 25px;
   }
 
   .secondText {
     margin-bottom: 30px;
+  }
+  .imageBox {
+    background-image: url('/public/promoImage_d.webp');
+    left: -170px;
+  }
+
+  .imageBoxWrapper {
+    margin-bottom: 25px;
+    position: relative;
+    height: 412px;
+    width: 1440px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .imageBox {
+      background-image: url('/public/promoImage_d@2x.webp');
+    }
   }
 }
