@@ -1,8 +1,5 @@
 import s from './QuizCard.module.css';
 
-export interface IQuestion {
-  answer: string;
-}
 interface IQuizCard {
   current: number;
   total: number;

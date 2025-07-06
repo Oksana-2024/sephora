@@ -1,13 +1,12 @@
 import { useContext } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { questions, QuizContext } from '../../helpers/quizHooks';
-import useMedia from '../../helpers/useMedia';
+
 import Container from '../Container/Container';
 import QuizCard from '../QuizContext/QuizCard';
 import s from './SectionHero.module.css';
 
 export default function SectionHero() {
-  const { isBigScreen } = useMedia();
   const { state, dispatch } = useContext(QuizContext);
 
   return (
@@ -47,26 +46,7 @@ export default function SectionHero() {
                 available in Sephora stores. Limit: one box per customer.
               </p>
 
-              {isBigScreen ? (
-                <img
-                  src="/promoImage_d.webp"
-                  alt="Promo Sephora"
-                  srcSet="/promoImage_d@2x.webp"
-                  width={1440}
-                  height={412}
-                  className={s.heroImg}
-                />
-              ) : (
-                <img
-                  src="/promoImage.webp"
-                  alt="Promo Sephora"
-                  srcSet="/promoImage@2x.webp"
-                  width={393}
-                  height={113}
-                  className={s.heroImg}
-                />
-              )}
-
+             <div className={s.imageBoxWrapper}> <div className={s.imageBox}></div></div>
               <p className={s.firstText}>
                 To receive your Sephora Box, complete the form to confirm that
                 you are a real person.
